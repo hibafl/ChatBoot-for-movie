@@ -1,0 +1,10 @@
+streamlit
+pandas
+scikit-learn
+sentence-transformers
+torch
+pyttsx3
+SpeechRecognition
+textblob
+vaderSentiment
+nltk
