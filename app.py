@@ -24,7 +24,7 @@ st.title("Welcome to Filmo")
 
 # Load IMDb data
 
-df = pd.read_csv(r"C:\Users\User\For Coding\BackEnd JS\js\imdbspe_fixed.csv")
+df = pd.read_csv("https://github.com/hibafl/ChatBoot-for-movie/blob/main/imdbspe_fixed.csv")
 
 
 required_columns = ['resume', 'nom', 'date', 'rate', 'cover', 'genre', 'director', 'imdb_id']
