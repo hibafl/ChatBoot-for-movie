@@ -39,8 +39,9 @@ tfidf_matrix = tfidf.fit_transform(df['resume'].fillna(""))
 
 # Sentence Transformer setup
 @st.cache_resource
+
 def load_model_and_embeddings():
-    model = SentenceTransformer('all-MiniLM-L6-v2')
+    model = SentenceTransformer('./all-MiniLM-L6-v2')
     descriptions = df['resume'].fillna("").tolist()
     embeddings = model.encode(descriptions, convert_to_tensor=True)
     return model, embeddings
